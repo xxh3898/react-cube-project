@@ -44,7 +44,7 @@ const Login = () => {
             name="id"
             value={input.id}
             onChange={handleChange}
-            placeholder='아이디를 요력하세요'
+            placeholder='아이디를 입력하세요'
           />
         </InputGroup>
 
