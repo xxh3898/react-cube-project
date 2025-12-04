@@ -16,7 +16,7 @@ const Login = () => {
   };
 
   const handleLogin = (e) => {
-    e.preventDefalut();
+    e.preventDefault();
 
     if (!input.id || !input.pw) {
       alert("아이디와 비밀번호를 입력해주세요.");
