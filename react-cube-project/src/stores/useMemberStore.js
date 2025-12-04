@@ -44,6 +44,11 @@ const useMemberStore = create((set, get) => ({
         }
         return false;
     },
+
+    logout: () => {
+        set({ user: null });
+        localStorage.removeItem(USER_KEY);
+    }
 }));
 
 export default useMemberStore;
