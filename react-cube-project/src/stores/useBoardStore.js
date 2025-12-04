@@ -33,6 +33,22 @@ const useBoardStore = create((set, get) => ({
         const updated = [newPost, ...posts];
         set({ posts: updated });
         localStorage.setItem(BOARD_KEY, JSON.stringify(updated));
+    },
+
+    deletePost: (id) => {
+        const { posts } = get();
+        const updated = posts.filter(post => post.id !== Number(id));
+        set({ posts: updated });
+        localStorage.setItem(BOARD_KEY, JSON.stringify(updated));
+    },
+
+    updatePost: (id, newTitle, newContent) => {
+        const { posts } = get();
+        const updated = posts.map(post =>
+            post.id === Number(id) ? { ...post, title: newTitle, content: newContent } : post
+        );
+        set({ posts: updated });
+        localStorage.setItem(BOARD_KEY, JSON.stringify(updated));
     }
 }));
 

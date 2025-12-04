@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 // =========================================
-// Layout & Typography
+// 1. 공통 레이아웃 & 타이포그래피
 // =========================================
 
 export const BoardContainer = styled.div`
@@ -15,12 +15,12 @@ export const Title = styled.h2`
   font-weight: 700;
   color: #333;
   margin-bottom: 30px;
-  border-left: 5px solid #5833ff; /* 포인트 컬러 */
+  border-left: 5px solid #5833ff;
   padding-left: 15px;
 `;
 
 // =========================================
-// Table Styles (게시판 목록)
+// 2. 게시판 목록 (Table) 스타일
 // =========================================
 
 export const Table = styled.table`
@@ -44,12 +44,9 @@ export const Table = styled.table`
   td.title {
     text-align: left;
     font-weight: bold;
-
     a {
       color: #333;
       text-decoration: none;
-      transition: color 0.2s;
-
       &:hover {
         text-decoration: underline;
         color: #5833ff;
@@ -59,13 +56,10 @@ export const Table = styled.table`
 
   td.content-preview {
     text-align: left;
-
     a {
       color: #888;
       text-decoration: none;
       font-size: 14px;
-      transition: color 0.2s;
-
       &:hover {
         text-decoration: underline;
         color: #666;
@@ -75,7 +69,7 @@ export const Table = styled.table`
 `;
 
 // =========================================
-// Form Styles (글쓰기/수정)
+// 3. 글쓰기 폼 (Form) 스타일
 // =========================================
 
 export const FormContainer = styled.div`
@@ -91,8 +85,6 @@ export const Input = styled.input`
   border-radius: 8px;
   font-size: 16px;
   box-sizing: border-box;
-  transition: border-color 0.2s;
-
   &:focus {
     border-color: #5833ff;
     outline: none;
@@ -109,8 +101,6 @@ export const Textarea = styled.textarea`
   resize: vertical;
   box-sizing: border-box;
   font-family: inherit;
-  transition: border-color 0.2s;
-
   &:focus {
     border-color: #5833ff;
     outline: none;
@@ -118,13 +108,63 @@ export const Textarea = styled.textarea`
 `;
 
 // =========================================
-// Button Styles
+// 4. 상세 페이지 (Detail) 전용 스타일
+// =========================================
+
+export const PostWrapper = styled.div`
+  border-top: 2px solid #333;
+  border-bottom: 1px solid #ddd;
+`;
+
+export const PostHeader = styled.div`
+  padding: 20px 15px;
+  border-bottom: 1px solid #eee;
+  background-color: #fcfcfc;
+`;
+
+export const PostTitle = styled.h3`
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+  margin: 0 0 15px 0;
+`;
+
+export const PostInfo = styled.div`
+  display: flex;
+  gap: 20px;
+  color: #666;
+  font-size: 14px;
+
+  span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  strong {
+    font-weight: 600;
+    color: #333;
+  }
+`;
+
+export const PostContent = styled.div`
+  padding: 40px 20px;
+  min-height: 300px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  white-space: pre-wrap;
+`;
+
+// =========================================
+// 5. 버튼 (Buttons)
 // =========================================
 
 export const ButtonGroup = styled.div`
   display: flex;
   justify-content: flex-end;
   gap: 10px;
+  margin-top: 20px;
 `;
 
 export const Button = styled.button`
@@ -134,16 +174,22 @@ export const Button = styled.button`
   border: none;
   border-radius: 6px;
   font-weight: 600;
-  font-size: 15px;
   cursor: pointer;
+  font-size: 15px;
   transition: background 0.2s;
 
   &:hover {
     background: #4622e0;
   }
+`;
 
-  &:disabled {
-    background: #ccc;
-    cursor: not-allowed;
+export const SecondaryButton = styled(Button)`
+  background: #fff;
+  color: #555;
+  border: 1px solid #ddd;
+
+  &:hover {
+    background: #f1f1f1;
+    color: #333;
   }
 `;
