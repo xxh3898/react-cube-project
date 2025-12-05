@@ -75,12 +75,6 @@ src/
    npm run dev
    ```
 
-
-## 📝 개발 일지 (Dev Log)
-프로젝트 개발 과정과 트러블 슈팅 내역은 블로그에 상세히 기록되어 있습니다.
-* **[React 큐브 프로젝트 개발 일지 보러가기](https://xxh3898.tistory.com/entry/react-cube-project-개발-일지-Day-1)**
-
-
 ## 👤 Author
 * **xxh3898** - [GitHub Profile](https://github.com/xxh3898)
 * 궁금한 점이 있다면 이슈(Issue)를 등록해주세요.
