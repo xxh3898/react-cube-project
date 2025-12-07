@@ -1,4 +1,4 @@
-# 🧊 React Cube Project (SpeedCubing.io)
+# React Cube Project (SpeedCubing.io)
 
 ![Timer](./react-cube-project/src/assets/Timer.gif)
 
@@ -6,7 +6,7 @@
 >
 > **Demo**: [https://react-cube-project.vercel.app/](https://react-cube-project.vercel.app/)
 >
-> **📝 Dev Log**: [**개발 과정 및 트러블 슈팅 회고록 보러가기**](https://xxh3898.tistory.com/entry/React-Cube-Project)
+> **Dev Log**: [**개발 과정 및 트러블 슈팅 회고록 보러가기**](https://xxh3898.tistory.com/entry/React-Cube-Project)
 
 타이머 측정부터 기록 관리, 필수 알고리즘(CFOP) 3D 시각화, 그리고 큐버들을 위한 커뮤니티 기능까지 React로 구현한 웹 서비스입니다. 백엔드 서버 없이 `LocalStorage`와 `Zustand`를 활용하여 데이터 영속성을 구현했습니다.
 
@@ -73,6 +73,7 @@ src/
 * [ ] **통계 고도화**: Ao5(최근 5회 평균), Ao12 등 전문적인 큐브 통계 지표 추가
 * [ ] **랭킹 시스템**: 유저 아이디 옆에 PB(최고 기록) 뱃지 표시
 * [ ] **댓글 기능**: 커뮤니티 활성화를 위한 댓글 시스템 도입
+* [ ] **모바일 반응형**: 모바일 사용자를 위한 반응형 디자인
 
 ## 💿 설치 및 실행 (Installation)
 
